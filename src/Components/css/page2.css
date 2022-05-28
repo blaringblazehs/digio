@@ -1,0 +1,125 @@
+.page2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.p-left {
+    display: flex;
+    align-items: center;
+    height: 800px;
+    grid-column: 1/2;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid orange; */
+    background-color: #e2e6ea;
+    overflow: scroll;
+    position: sticky;
+    left: 0;
+    top: 61px;
+    /* z-index: 100; */
+}
+.p-left img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.left-img-div {
+    padding: 2%;
+    /* border: 2px solid red; */
+    margin: 20px;
+}
+/* -------------------------------------------------------------------------------------- */
+/* Right side section on Page 2 */
+.p-right-container {
+    display: grid;
+    grid-column: 2/3;
+    grid-template-rows: 80px 1fr;
+}
+.p-right-nav {
+    border-bottom: 6px solid rgb(144, 144, 144);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 61px;
+    background-color: white;
+    z-index: 1;
+}
+.p-right-person-container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    padding: 2px;
+    /* font-size: small; */
+}
+.p-right-person-container > div:first-of-type {
+    margin-left: 30px;
+    /* background-color: blue; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.p-person-icon {
+    background-color: #0261b1;
+    font-size: large;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 0;
+}
+.p-right-step > p {
+    font-size: 15px;
+    font-weight: 200;
+}
+.p-right-step > h3 {
+    /* font-size: 15px; */
+    font-weight: 300;
+}
+/* ---------------------------------------------------------------- */
+/* bottom section of page below navbar */
+.p-right-btm {
+    width: 100%;
+    margin: 20px auto;
+    overflow: scroll;
+    height: 2300px;
+}
+.p-right-btm > div {
+    padding-top: 20px;
+}
+.add-person-btn {
+    display: flex;
+    align-items: center;
+    width: 94%;
+    background: transparent;
+    padding: 6px;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    padding-left: 20px;
+    margin: auto;
+    color: #0261b1;
+}
+.add-person-btn:hover {
+    background-color: lightgrey;
+    box-shadow: 0px 0px 1px 1px lightgrey;
+}
+.add-person-btn > p {
+    margin-left: 6px;
+}
+.pg2-toggle {
+    width: 94%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 46px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.pg-switch {
+    transform: scale(1.5);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.bg-dark {
+    background-color: #f7f9fb;
+}

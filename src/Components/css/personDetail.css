@@ -1,0 +1,89 @@
+.p-detail-cont > div {
+    /* padding-top: 20px; */
+    margin-top: 20px;
+}
+.personDetail-container {
+    display: grid;
+    height: 130px;
+    border: 2px solid black;
+    width: 94%;
+    margin: auto;
+    background-color: #f7f9fb;
+    grid-template-columns: 80px 1.4fr 1fr 1fr 1fr;
+    /* overflow: scroll; */
+}
+
+input[type="text"] {
+    padding: 5px;
+    background-color: #fceee4;
+    width: 86%;
+    margin: 2px 0px;
+    border-radius: 5px;
+    border: 2px solid #f2991b;
+}
+input[type="date"] {
+    padding: 5px;
+    width: 90%;
+    margin: 2px 0px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid lightgrey;
+    color: rgb(182, 182, 182);
+}
+.person-detail-icon {
+    background-color: #f2991b;
+    border-radius: 50%;
+    font-size: 40px;
+    transform: scale(1.2);
+    padding: 3px;
+    color: white;
+}
+.p-input-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f9fb;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.detail-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-pa {
+    width: 95%;
+    height: 42px;
+    /* padding: 16px 20px; */
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+
+    color: #afb0b0;
+    background-color: #f1f1f1;
+}
+.corner-number {
+    position: relative;
+    top: -50px;
+    left: -2px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: grey;
+    background-color: #fceee4;
+}
+.p-delete-icon {
+    position: relative;
+    top: 6px;
+    transform: scale(0.8);
+    right: -109px;
+    padding: 2px;
+    color: #4c4c4c;
+    background-color: #eaeaeb;
+    height: 40px;
+    width: 40px;
+}
+.pa2 {
+    margin-top: 41px;
+}
