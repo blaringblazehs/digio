@@ -1,8 +1,101 @@
 .footer {
-    display: flex;
+    display: grid;
     align-items: center;
-    border: 2px solid black;
+    grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+    /* border: 2px solid black; */
+    border-top: 1px solid grey;
     position: sticky;
     bottom: 0;
     background-color: white;
+}
+.f-page1 {
+    grid-column: 2/3;
+}
+.f-btn {
+    display: grid;
+    height: 70%;
+    grid-gap: 10px;
+    padding-left: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.f-back {
+    background-color: #85b0d9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.f-back:hover {
+    background-color: #6996c0;
+}
+.f-next {
+    background-color: #0261b1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.f-next:hover {
+    background-color: #034f8d;
+}
+.f-upload-icon {
+    background-color: #27ae60;
+    transform: scale(1.1);
+    margin-left: 20px;
+    color: white;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.f-step {
+    margin-left: 10px;
+    color: rgb(109, 108, 108);
+    font-size: 20px;
+    font-weight: 300;
+}
+.f-upload {
+    display: flex;
+    align-items: center;
+}
+.f-horizontal-bar {
+    width: 80%;
+    margin-left: 20px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #27ae60;
+}
+.f-green {
+    background-color: #27ae60;
+    transition: color 1s;
+}
+.f-grey {
+    background-color: #bdbdbd;
+}
+/* Media Queries ------------------------------------------------------ */
+@media only screen and (max-width: 1200px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 100px 1fr 100px;
+    }
+    .f-page1 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .f-page2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .f-page3 {
+        visibility: hidden;
+        display: none;
+    }
+    .f-btn {
+        width: 100%;
+        margin: auto;
+        grid-column: 2/3;
+    }
 }

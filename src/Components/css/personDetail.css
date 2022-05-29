@@ -5,7 +5,7 @@
 .personDetail-container {
     display: grid;
     height: 130px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 94%;
     margin: auto;
     background-color: #f7f9fb;
@@ -86,4 +86,49 @@ input[type="date"] {
 }
 .pa2 {
     margin-top: 41px;
+}
+/* Media Queries ------------------------------------------------------ */
+@media only screen and (max-width: 1200px) {
+    .personDetail-container {
+        display: grid;
+        height: 500px;
+        /* border: 2px solid black; */
+        width: 94%;
+        margin: auto;
+        background-color: #f7f9fb;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        /* overflow: scroll; */
+    }
+    input[type="text"] {
+        background-color: #fceee4;
+        width: 92%;
+        margin: 2px 0px;
+        border-radius: 5px;
+        border: 2px solid #f2991b;
+    }
+    input[type="date"] {
+        width: 92%;
+        margin: 2px 0px;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        border: 1px solid lightgrey;
+        color: rgb(182, 182, 182);
+    }
+    .corner-number {
+        position: relative;
+        top: -30px;
+        left: -353px;
+    }
+    .p-delete-icon {
+        position: relative;
+        top: 6px;
+        transform: scale(0.8);
+        right: -360px;
+        padding: 2px;
+        color: #4c4c4c;
+        background-color: #eaeaeb;
+        height: 40px;
+        width: 40px;
+    }
 }
